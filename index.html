@@ -3,34 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mazhar Umut Yılmaz - Systems & Requirements Engineer Portfolio" />
+
   <title>Mazhar Umut Yılmaz | Systems & Requirements Engineer</title>
+  <meta name="description" content="Portfolio of Mazhar Umut Yılmaz, Systems & Requirements Engineer." />
+
+  <!-- Replace YOUR-USERNAME below with your actual GitHub username if needed. -->
+  <link rel="canonical" href="https://MazharUmutYilmaz.github.io/" />
+  <link rel="alternate" hreflang="en" href="https://MazharUmutYilmaz.github.io/" />
+  <link rel="alternate" hreflang="de" href="https://MazharUmutYilmaz.github.io/de/" />
+  <link rel="alternate" hreflang="x-default" href="https://MazharUmutYilmaz.github.io/" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav-wrapper">
-      <a class="brand" href="#home">MUY</a>
+      <a class="brand" href="#home" aria-label="Home">MUY</a>
 
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="nav-area">
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="language-switcher" aria-label="Language">
+          <a class="active" href="./" lang="en" aria-current="page">EN</a>
+          <a href="de/" lang="de">DE</a>
+        </div>
+      </div>
     </div>
   </header>
 
   <main id="home">
 
-    <!-- HERO / BANNER -->
     <section class="hero">
       <img
         src="assets/banner.jpeg"
@@ -39,18 +50,16 @@
       />
     </section>
 
-    <!-- INTRO -->
     <section class="section intro-section">
       <div class="container">
         <p class="eyebrow">SYSTEMS ENGINEERING & REQUIREMENTS ENGINEERING</p>
 
-        <h1>Düzenle .</h1>
+        <h3>Requirements & Systems Engineering activities for developing complex products/systems.</h3>
 
         <p class="lead">
-          I am a Systems & Requirements Engineer focused on translating stakeholder
-          needs into structured, verifiable and traceable engineering requirements.
-          My interests include requirements engineering, systems engineering,
-          interface management and technical project coordination.
+          Systems & Requirements Engineering 
+          focused on developing complex products/systems with respect to stakeholder needs
+          considering international references.
         </p>
 
         <div class="button-row">
@@ -60,7 +69,6 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section class="section alt" id="about">
       <div class="container two-column">
         <div>
@@ -69,63 +77,16 @@
         </div>
 
         <div class="content">
-          <p>
-            I work at the intersection of systems engineering and requirements
-            engineering. I enjoy breaking down complex systems, identifying
-            stakeholder expectations, defining system boundaries and creating
-            requirements that are understandable, testable and maintainable.
+          <p>       
+            Hi, I’m Mazhar, a Systems and Requirements Engineer with 5+ years of professional experience in the railway and defence industries.
+            I value effective communication, continuous learning, and a research-driven approach to solving complex engineering challenges.
           </p>
-
-          <p>
-            This paragraph is sample content. You can replace it with your own
-            biography, professional summary, domain experience, certifications,
-            career goals or any other information you want to present.
-          </p>
-        </div>
-      </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section class="section" id="experience">
-      <div class="container">
-        <p class="section-number">02</p>
-        <h2>Experience</h2>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">2022 — Present</div>
-            <div>
-              <h3>Systems & Requirements Engineer</h3>
-              <p class="muted">Example Company / Railway & Defence Industries</p>
-              <p>
-                Example text: Responsible for requirements elicitation, analysis,
-                specification, traceability and change management throughout the
-                system lifecycle. Collaborated with multidisciplinary engineering
-                teams and supported verification and validation activities.
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">Example</div>
-            <div>
-              <h3>Previous Role / Project</h3>
-              <p class="muted">Company or Project Name</p>
-              <p>
-                Replace this section with your previous roles, important projects,
-                measurable achievements and technologies or standards you used.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
     <section class="section alt" id="skills">
       <div class="container">
-        <p class="section-number">03</p>
-        <h2>Core Competencies</h2>
+        <p class="section-number">02</p>
+        <h2>Key Areas of Expertise & Skills</h2>
 
         <div class="cards">
           <article class="card">
@@ -145,88 +106,117 @@
           </article>
 
           <article class="card">
-            <h3>Modeling</h3>
+            <h3>Research and Development</h3>
             <p>
-              Example tools and approaches: UML, SysML, use cases, context
-              diagrams, functional decomposition and interface modeling.
+              UML, SysML, use cases, context diagrams, functional decomposition
+              and interface modeling.
             </p>
           </article>
 
           <article class="card">
             <h3>Standards & Tools</h3>
             <p>
-              Example: ISO/IEC/IEEE 29148, ISO/IEC/IEEE 15288, IBM DOORS,
-              Jira, Confluence and other engineering tools.
+              ISO/IEC/IEEE 29148, ISO/IEC/IEEE 15288, IBM DOORS, Jira,
+              Confluence and other engineering tools.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-      <div class="container">
-        <p class="section-number">04</p>
-        <h2>Selected Projects</h2>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <span class="tag">Requirements Engineering</span>
-            <h3>Requirements Management Project</h3>
-            <p>
-              Example project description. Explain the system, your responsibility,
-              the problem you solved and the outcome.
-            </p>
-            <a href="#" aria-label="Open project">Project Details →</a>
-          </article>
-
-          <article class="project-card">
-            <span class="tag">Systems Engineering</span>
-            <h3>System Architecture Study</h3>
-            <p>
-              Add a second project here. You can link this card to a GitHub
-              repository, PDF document or a dedicated project page.
-            </p>
-            <a href="#" aria-label="Open project">Project Details →</a>
-          </article>
-
-          <article class="project-card">
-            <span class="tag">Interface Management</span>
-            <h3>Interface Definition Example</h3>
-            <p>
-              This is another editable placeholder. Add screenshots, diagrams or
-              links to public engineering samples later.
-            </p>
-            <a href="#" aria-label="Open project">Project Details →</a>
-          </article>
+    <section class="section alt" id="projects">
+      <div class="container two-column">
+        <div>
+          <p class="section-number">03</p>
+          <h2>Projects</h2>
         </div>
-      </div>
+
+        <div class="content">
+          <p>       
+            I develop projects in a variety of fields such as Engineering, Finance, Language Learning, Automation.
+          </p>
     </section>
 
-    <!-- CONTACT -->
     <section class="section contact-section" id="contact">
       <div class="container contact-box">
-        <div>
-          <p class="section-number">05</p>
+    
+        <div class="contact-info">
+          <p class="section-number">04</p>
           <h2>Let's Connect</h2>
+    
           <p>
             If you would like to discuss systems engineering, requirements
             engineering or potential opportunities, feel free to contact me.
           </p>
         </div>
 
-        <div class="contact-links">
-          <a href="mailto:mazharumutyilmazeee@gmail.com">
-            mazharumutyilmazeee@gmail.com
-          </a>
-
-          <a href="https://github.com/MazharUmutYilmaz" target="_blank" rel="noopener">
-            github.com/MazharUmutYilmaz
-          </a>
+    
+        <form
+        class="contact-form"
+        action="https://formspree.io/f/mnparwvd"
+        method="POST"
+      >
+      
+        <div class="form-row">
+      
+          <div class="form-group">
+            <label for="name">Name</label>
+      
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            >
+          </div>
+      
+          <div class="form-group">
+            <label for="email">Email</label>
+      
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="your@email.com"
+              required
+            >
+          </div>
+      
         </div>
+      
+        <div class="form-group">
+          <label for="subject">Subject</label>
+      
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="What would you like to discuss?"
+            required
+          >
+        </div>
+      
+        <div class="form-group">
+          <label for="message">Message</label>
+      
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+        </div>
+      
+        <button type="submit" class="contact-button">
+          Send Message
+        </button>
+      
+      </form>
+    
       </div>
     </section>
-
   </main>
 
   <footer class="footer">

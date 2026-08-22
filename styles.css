@@ -1,6 +1,5 @@
 /* =========================
    EASY CUSTOMIZATION
-   Change the values below to quickly update the theme.
    ========================= */
 :root {
   --bg: #030712;
@@ -14,9 +13,6 @@
   --max-width: 1180px;
 }
 
-/* =========================
-   BASE
-   ========================= */
 * {
   box-sizing: border-box;
 }
@@ -48,9 +44,7 @@ img {
   margin: 0 auto;
 }
 
-/* =========================
-   HEADER
-   ========================= */
+/* HEADER */
 .site-header {
   position: sticky;
   top: 0;
@@ -65,12 +59,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 24px;
 }
 
 .brand {
   width: 44px;
   height: 44px;
+  flex: 0 0 auto;
   display: grid;
   place-items: center;
   border-radius: 50%;
@@ -81,10 +76,18 @@ img {
   box-shadow: 0 0 30px rgba(22, 135, 255, 0.25);
 }
 
+.nav-area {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 28px;
+  min-width: 0;
+}
+
 .nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 24px;
 }
 
 .nav a {
@@ -98,9 +101,39 @@ img {
   color: var(--text);
 }
 
-/* =========================
-   HERO
-   ========================= */
+/* LANGUAGE SWITCHER */
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.03);
+  white-space: nowrap;
+}
+
+.language-switcher a {
+  min-width: 38px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.language-switcher a:hover {
+  color: var(--text);
+}
+
+.language-switcher a.active {
+  color: #fff;
+  background: var(--accent);
+}
+
+/* HERO */
 .hero {
   width: 100%;
   overflow: hidden;
@@ -114,9 +147,7 @@ img {
   object-fit: cover;
 }
 
-/* =========================
-   SECTIONS
-   ========================= */
+/* SECTIONS */
 .section {
   padding: 96px 0;
 }
@@ -187,9 +218,7 @@ h3 {
   font-size: 1.03rem;
 }
 
-/* =========================
-   BUTTONS
-   ========================= */
+/* BUTTONS */
 .button-row {
   display: flex;
   flex-wrap: wrap;
@@ -221,9 +250,7 @@ h3 {
   background: rgba(255,255,255,0.03);
 }
 
-/* =========================
-   EXPERIENCE
-   ========================= */
+/* EXPERIENCE */
 .timeline {
   margin-top: 46px;
   border-top: 1px solid var(--line);
@@ -247,9 +274,7 @@ h3 {
   color: var(--muted);
 }
 
-/* =========================
-   SKILLS
-   ========================= */
+/* SKILLS */
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -273,9 +298,7 @@ h3 {
   color: var(--muted);
 }
 
-/* =========================
-   PROJECTS
-   ========================= */
+/* PROJECTS */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -312,52 +335,120 @@ h3 {
 }
 
 /* =========================
-   CONTACT
+   CONTACT FORM
    ========================= */
-.contact-section {
-  background:
-    radial-gradient(circle at 70% 20%, rgba(22, 135, 255, 0.18), transparent 35%),
-    var(--bg);
-}
 
-.contact-box {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 70px;
-  align-items: end;
-}
-
-.contact-box p {
-  max-width: 650px;
-  color: var(--muted);
-}
-
-.contact-links {
+.contact-form {
+  margin-top: 40px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  align-items: flex-start;
+  gap: 20px;
 }
 
-.contact-links a {
-  color: var(--accent-2);
-  font-weight: 700;
-  word-break: break-word;
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
-/* =========================
-   FOOTER
-   ========================= */
-.footer {
-  padding: 28px 0;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 0.85rem;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+
+  background: transparent;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #333;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-button {
+  align-self: flex-start;
+
+  padding: 13px 28px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #111;
+  color: #fff;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-button {
+    width: 100%;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 980px) {
+  .nav-area {
+    gap: 16px;
+  }
+
+  .nav {
+    gap: 14px;
+  }
+
+  .nav a {
+    font-size: 0.82rem;
+  }
+}
+
 @media (max-width: 900px) {
   .two-column,
   .contact-box {
@@ -379,23 +470,17 @@ h3 {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 760px) {
   .site-header {
     position: static;
   }
 
   .nav-wrapper {
     padding: 14px 0;
-    align-items: flex-start;
   }
 
   .nav {
-    justify-content: flex-end;
-    gap: 12px 18px;
-  }
-
-  .nav a {
-    font-size: 0.78rem;
+    display: none;
   }
 
   .section {
@@ -410,10 +495,6 @@ h3 {
 @media (max-width: 520px) {
   .container {
     width: min(calc(100% - 28px), var(--max-width));
-  }
-
-  .nav {
-    display: none;
   }
 
   .hero-image {
