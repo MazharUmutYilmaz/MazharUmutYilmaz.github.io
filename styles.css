@@ -363,25 +363,28 @@ h3 {
   font-weight: 600;
   letter-spacing: 0.5px;
 }
-
 .form-group input,
 .form-group textarea {
   width: 100%;
   padding: 14px 16px;
-
   font-family: inherit;
   font-size: 15px;
 
+  color: #222;
+  background: #fff;
+
   border: 1px solid #d8d8d8;
   border-radius: 8px;
-
-  background: transparent;
-
   outline: none;
 
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
 }
 
 .form-group input:focus,
